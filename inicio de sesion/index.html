@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiados-Sesion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="https://api.iconify.design/material-symbols:food-bank.svg" alt="CLAP Logo" class="logo">
+                <h1>Gestión de Beneficiados CLAP</h1>
+                <p>Inicio de sesión</p>
+            </div>
+            <form id="loginForm" action="../functions.php" method="POST">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="nombre" id="nombre" placeholder="Usuario" required>
+                    </div>
+                    <span class="error-message" id="userError"></span>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <i class="fas fa-eye-slash toggle-password" id="togglePassword"></i>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <input type="hidden" name="accion" value="acceso_user">
+                <button type="submit" class="login-btn">
+                    <span>Iniciar sesión</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

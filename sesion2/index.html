@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beneficiados-Sesion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-content">
+            <form action="../functions.php" method="POST">
+                <div class="logo">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2>Gestion de Beneficiados CLAP</h2>
+                <h1>Inicio de sesión</h1>
+                
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="nombre" required placeholder="Usuario">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" required placeholder="Contraseña">
+                    </div>
+                </div>
+
+                <input type="hidden" name="accion" value="acceso_user">
+                <button class="btn" type="submit">
+                    <span>Iniciar sesión</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
